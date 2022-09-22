@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
-import Navbar from './components/navbar.js';
-import ItemListContainer from './components/itemlistcontainer.js';
+import Navbar from './components/NavBar.js';
+import ItemListContainer from './components/ItemListContainer.js';
 import Header from './components/header';
 function App() {
   return (
@@ -9,6 +9,7 @@ function App() {
       <Header/>
       <Navbar/>
       <ItemListContainer greeting={"Hola! Somos Moon Accesorios"}/>
+      <ItemListContainer greeting={"Ingresa a nuestra tienda"}/>
     </div>
   );
 }

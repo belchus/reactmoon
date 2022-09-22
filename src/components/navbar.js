@@ -1,21 +1,21 @@
-import "./navbar.css"
-import CartWidget from "./cartwidget.js";
+import "./components.css"
+import CartWidget from "./CartWidget.js";
 const Navbar = () => {
 
     return(
     <div className="navbar"> 
 <ul>
     <li>
-      Inicio
+    <a href="#">Inicio</a>
     </li>
     <li>
-      Productos
+    <a href="#">Productos</a>
     </li>
     <li>
-      Contacto
+    <a href="">Contacto</a>
     </li>
     <li className="Cart">
-    <CartWidget/>
+    <a href="#"><CartWidget/></a>
     </li>
 </ul>
     

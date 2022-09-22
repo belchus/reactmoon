@@ -9,10 +9,15 @@ ul{
     text-align: center;
     font-family: 'Koulen', cursive;
 }
+a{
+    text-decoration: none;
+    color: black;
+}
 li{
     font-size: 30px;
     margin: 20px;
     text-align: center;
+ 
 }
 .Cart{
     height: 40px;
@@ -35,3 +40,6 @@ li{
 body{
     background-color:#a26faf;
 }
+ .titulo{
+    margin: 15px;
+ }
