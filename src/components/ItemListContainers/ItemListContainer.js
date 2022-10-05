@@ -3,16 +3,16 @@ import Productos from "./Productos";
 
 
 const ItemListContainer = () => {
-const [pulseras, setPulsera] = useState([]);
+const [pulsera, setPulsera] = useState([]);
 
 
 useEffect(() => {
-const getData = new Promise (resolve =>{
+const pulseras = new Promise (resolve =>{
     setTimeout(() => {
         resolve (Productos)
     }, 3000)
 });
-getData.then(res => setData(res));
+pulseras.then(res => setPulsera(res));
 
 }, [])
 
