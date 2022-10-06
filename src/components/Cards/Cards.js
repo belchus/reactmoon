@@ -10,7 +10,7 @@ function Cards( {info} ) {
      {info.imagen} 
       <h3>{info.nombre}</h3>   
         <div>
-        <Link to= {`/Detail/${info.id}`}> Ver más </Link>
+        <Link to= {`/Detail/${info.id}`}> Ver mas </Link>
         </div>
 
       </div>

@@ -13,7 +13,7 @@ const Navbar = () => {
     <Link to={"/ItemListContainer"}>Productos</Link>
     </li>
     <li>
-    <a href="">Contacto</a>
+    <a href="#">Contacto</a>
     </li>
     <li className="Cart">
     <a href="#"><CartWidget/></a>

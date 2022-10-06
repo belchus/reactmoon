@@ -16,7 +16,7 @@ useEffect(() => {
         }, 3000)
     });
 
-    getData.then(resolve => setItem(resolve.find((prod)=> prod.id === Number(id))));
+    getData.then(prod => setItem(prod.find((prod)=> prod.id === Number(id))));
 },[id])
 
     return( <div className="text"> <ItemDetail item={item}/> <p>Id: {id}</p> <p>Precio {item.precio}</p> </div>
