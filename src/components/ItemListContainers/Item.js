@@ -63,5 +63,15 @@ const Productos =[
           descripcion:"Dije de girasol de acero quirurgico"
         }
       ]
+      const getAllProducts= () => {
+        const promise = new Promise((resolve) => {
+            setTimeout(()=>
+            {
+              return resolve(Productos);  
+            },2000);
+            
+        });
+        return promise
+    };
 
-export default Productos;
+export default getAllProducts;

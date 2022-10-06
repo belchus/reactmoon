@@ -1,18 +1,9 @@
-import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
-import ItemListContainer from "./ItemListContainer";
+import Cards from "../Cards/Cards";
 
-const ItemList = ()=>{
-    const {CategoryId} =useParams();
-    const [Productos,setProductos]=useState([]);
-    useEffect(()=>{
-        console.log(CategoryId)
-    },[CategoryId]);
-    useEffect(()=>{
+const ItemList = ( {Productos = []}) => {
+    return (
+        Productos.map(Productos => <Cards key={Productos.id} info={Productos}/>)
+);}
 
-            ItemListContainer()
-            .then((data)=>setProductos(data))
-            .catch((error)=>console.warn(error))
-        },[CategoryId])
-}
+
 export default ItemList;
