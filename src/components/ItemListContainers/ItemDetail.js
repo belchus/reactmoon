@@ -1,8 +1,8 @@
 const ItemDetail = ( {item}) =>{
     return(
         <div className='fondo'>
-            <p className='text'> Detalle de : {item.nombre}</p>
-            <img className="ItemDetalle" src={item.imagen} alt={item.nombre}/>
+            <p className='text'> Informacion sobre : {item.titulo}</p>
+            <img className="ItemDetalle" src={item.imgSrc} alt={item.titulo}/>
         </div>
     )
 };

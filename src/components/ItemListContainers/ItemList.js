@@ -2,7 +2,7 @@ import Cards from "../Cards/Cards";
 
 const ItemList = ( {Productos = []}) => {
     return (
-        Productos.map(Productos => <Cards key={Productos.id} info={Productos}/>)
+        Productos.map(Productos => <Cards key={Productos.id} descrip={Productos}/>)
 );}
 
 
