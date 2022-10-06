@@ -1,28 +1,14 @@
-import { useState, useEffect } from "react";
+
 import Productos from "./Productos";
 
-
-const ItemListContainer = () => {
-const [pulsera, setPulsera] = useState([]);
-
-
-useEffect(() => {
-const pulseras = new Promise (resolve =>{
-    setTimeout(() => {
-        resolve (Productos)
-    }, 3000)
-});
-pulseras.then(res => setPulsera(res));
-
-}, [])
-
-
-    return(
-        <div> Productos
+const ItemListContainer= () => {
+    const promise = new Promise((resolve) => {
+        setTimeout(()=>
+        {
+          return resolve(Productos);  
+        },2000);
         
-
-        </div>
-    )
-    }
-
+    });
+    return promise
+};
 export default ItemListContainer;

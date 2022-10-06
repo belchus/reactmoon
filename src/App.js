@@ -2,8 +2,8 @@ import logo from './logo.svg';
 import './App.css';
 import Navbar from './components/NavBar.js';
 import Header from './components/header';
-import Productos from './components/ItemListContainers/Productos';
-import Home from './routes/Detail';
+import ItemList from './components/ItemListContainers/ItemList';
+import Home from './routes/Home';
 import{ BrowserRouter,Routes,Route} from 'react-router-dom';
 function App() {
   return (
@@ -13,7 +13,7 @@ function App() {
       <Navbar/>
     <Routes>
     <Route path='/Home/' element={<Home/>}/>
-      <Route path='/Productos/' element={<Productos/>}/>
+      <Route path='/ItemList/' element={<ItemList/>}/>
     </Routes>
   </BrowserRouter>
     </div>
