@@ -1,0 +1,25 @@
+*
+{
+    margin:0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+.Card {
+    width: 400px;
+    height: 450px;
+    margin: 10px;
+    justify-content: center;;
+    margin-top: 50px;
+    margin-bottom: 60px;
+}
+
+.cards{
+    background-color: #3b1b47;
+    width: 450px;
+    height: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}

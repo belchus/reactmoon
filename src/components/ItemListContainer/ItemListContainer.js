@@ -5,17 +5,17 @@ import ItemList from "./ItemList";
 import getAllProducts from "./Item";
 
 const ItemListContainer = ({greeting})=>{
-    const {CategoryId} =useParams();
+    const {Id} =useParams();
     const [Productos,setProductos]=useState([]);
     useEffect(()=>{
-        console.log(CategoryId)
-    },[CategoryId]);
+        console.log(Id)
+    },[Id]);
     useEffect(()=>{
 
             getAllProducts()
             .then((data)=>setProductos(data))
             .catch((error)=>console.warn(error))
-        },[CategoryId])
+        },[Id])
  return(
     <div>
         <h1>
