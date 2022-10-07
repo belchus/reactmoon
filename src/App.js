@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
-import Navbar from './components/Navbar.js';
-import Header from './components/header';
+import Navbar from './components/Navbar/Navbar.js';
+import Header from './components/Header/header';
 import ItemDetailContainer from './components/ItemListContainer/ItemDetailContainer';
 import{ BrowserRouter,Routes,Route} from 'react-router-dom';
 import ItemListContainer from './components/ItemListContainer/ItemListContainer';
