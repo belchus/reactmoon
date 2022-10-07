@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import getAllProducts from "./Item";
 import ItemDetail from "./ItemDetail"
 import Producto from "./ItemList";
 
@@ -11,7 +12,7 @@ const {id}= useParams()
 console.log(id)
 useEffect(() => {
     const getData = () => {
-        return new Promise((resolve, reject) => {
+        return getAllProducts((resolve, reject) => {
           setTimeout(() => {
               resolve(Producto)
           }, 3000);
