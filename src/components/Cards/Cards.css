@@ -12,7 +12,11 @@
     justify-content: center;;
     margin-top: 20px;
     margin-bottom: 20px;
+    
   
+}
+.desc{
+    padding: 10px;
 }
 
 .cards{
@@ -24,6 +28,7 @@
     flex-wrap: wrap;
     justify-content: center;
   color: white;
+
 }
 .link{
     margin-top: 10px;

@@ -11,7 +11,9 @@ function Cards( {info} ) {
       <div  className="cards">
       <Card.Body className="img" >
       <Card.Img variant="top" src={info.imagen} className="Card"/>
-        <Card.Title><h3 >{info.nombre}</h3></Card.Title>    
+      <div className="desc">
+        <Card.Title><h3 >{info.nombre}</h3></Card.Title> 
+        </div>   
         <div className="desc">
         <Link className="link" to= {`/Item/${info.id}`}> Ver más </Link>
         </div>
