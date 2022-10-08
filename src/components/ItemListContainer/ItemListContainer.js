@@ -18,7 +18,7 @@ const ItemListContainer = ({greeting})=>{
         },[Id])
  return(
     <div>
-        <h1>
+        <h1 className="tituloinicial">
             Todos los Productos
         </h1>
                 <ItemList Productos={Productos} />
