@@ -1,0 +1,24 @@
+.descripcion{
+    font-size: 40px;
+    background-color:#3b1b47 ;
+    margin-top: 100px;
+ color: white;
+    margin-bottom: 100px;
+    text-align: center;
+    justify-content: center;
+
+}
+.text{
+    margin-top: 10px;
+}
+.ItemDetalle{
+    width: 250px;
+    height: 250px;
+    margin: 100px;
+    border-radius: 10px;
+    border-color: aliceblue;
+    justify-content: center;;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  
+}

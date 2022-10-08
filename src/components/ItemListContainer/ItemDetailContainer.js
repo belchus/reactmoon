@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import getAllProducts from "./Item";
 import ItemDetail from "./ItemDetail"
 import Producto from "./ItemList";
-
+import './ItemListContainer.css'
 
 
 const ItemDetailContainer =() => {
@@ -23,7 +23,7 @@ useEffect(() => {
 },[id])
 
 console.log(item)
-    return( <div className="text"> <ItemDetail item={item}/> <p>Id: {id}</p> <p>Precio {item.precio}</p> </div>
+    return( <div className="descripcion"> <ItemDetail item={item}/> <p>Codigo {id}</p> <p> {item.precio}</p> </div>
     )
 }
 
