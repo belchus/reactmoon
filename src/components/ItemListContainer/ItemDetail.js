@@ -7,7 +7,7 @@ const onAdd = (cantidad) => {
 
 const ItemDetail = ( {item}) =>{
     return(
-        <div className='fondo'>
+        <div className='back'>
             <h2 > {item.nombre}</h2>
             <p> {item.descripcion}</p>
             <img className="ItemDetalle" src={item.imagen} alt={item.nombre}/>
