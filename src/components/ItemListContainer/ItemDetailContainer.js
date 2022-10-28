@@ -9,7 +9,6 @@ import './ItemListContainer.css'
 const ItemDetailContainer =() => {
 const [item, setItem] =useState({})
 const {id}= useParams()
-console.log(id)
 useEffect(() => {
     const getData = () => {
         return getAllProducts((resolve, reject) => {
@@ -21,8 +20,6 @@ useEffect(() => {
     }
     getData().then(item => setItem(item.find((item)=> item.id === Number(id))));
 },[id])
-
-console.log(item)
     return( <div className="descripcion"> <ItemDetail item={item}/> <p>Codigo {id}</p> <p> {item.precio}</p> </div>
     )
 }
