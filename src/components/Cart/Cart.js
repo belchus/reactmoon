@@ -1,10 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { useCartContext } from "../../context/CartContext";
+import CartItem from "./CartItem";
 
-const Cart = ( {item}) =>{
-    const{cart,totalPrice}=useCartContext();
-    if(cart.length===0){
+const Cart = ( {}) =>{
+    const{Cart,totalPrice}=useCartContext();
+    if(Cart.length===0){
         return(
             <>
             <p>El carrito esta vacio</p>
@@ -13,10 +14,13 @@ const Cart = ( {item}) =>{
         );
     }
     return(
-        <div>Cart</div>
-            
+        <>
+        {
+            Cart.map(item=> <CartItem key={item.id} item={item}/>)
+        }
+        </>
     )
 
 };
 
-export default Cart
+export default Cart;

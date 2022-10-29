@@ -6,16 +6,16 @@ import { useCartContext } from '../../context/CartContext';
 
 
 
-export const ItemDetail = ( {item}) =>{
+export const ItemDetail = ( {data}) =>{
     const{addProduct} =useCartContext();
 const onAdd = (cantidad) => {
-    addProduct(item,cantidad);
+    addProduct(data,cantidad);
 }
     return(
         <div className='back'>
-            <h2 > {item.nombre}</h2>
-            <p> {item.descripcion}</p>
-            <img className="ItemDetalle" src={item.imagen} alt={item.nombre}/>
+            <h2 > {data.nombre}</h2>
+            <p> {data.descripcion}</p>
+            <img className="ItemDetalle" src={data.imagen} alt={data.nombre}/>
             <Contador initial={1} stock={10} onAdd={onAdd}/>
         </div>
             
