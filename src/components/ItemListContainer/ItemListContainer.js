@@ -1,13 +1,13 @@
 
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import {getFirestore,collection,getDocs} from 'firebase/firestore';
+import {getFirestore,collection,getDocs,query,where} from 'firebase/firestore';
 import ItemList from "./ItemList";
 import getAllProducts from "./Item";
 
 
 const ItemListContainer = ({greeting})=>{
-    const {Id} =useParams();
+    const {DetalleId} =useParams();
     const [Productos,setProductos]=useState([]);
    // useEffect(()=>{
      //   console.log(Id)
@@ -15,12 +15,15 @@ const ItemListContainer = ({greeting})=>{
     useEffect(()=>{
 const querydb =getFirestore();
 const queryCollection= collection(querydb,"items");
-getDocs(queryCollection)
+if (DetalleId){
+const queryFilter=query(queryCollection,where("categoria","==",DetalleId))
+getDocs(queryFilter)
 .then(res=>setProductos(res.docs.map(items=>({id: items.id, ...items.data()}))))
-           // getAllProducts()
-            //.then((data)=>setProductos(data))
-            //.catch((error)=>console.warn(error))
-        },[Id])
+}else{
+    getDocs(queryCollection)
+.then(res=>setProductos(res.docs.map(items=>({id: items.id, ...items.data()}))))}
+        },[DetalleId])
+    
  return(
     <div>
        <h1 className="tituloinicial">

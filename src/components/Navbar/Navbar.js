@@ -13,13 +13,13 @@ const Navbar = () => {
     <Link to={"/ItemListContainer"}>Productos</Link>
     <ul className="submenu">
     <li>
-    <Link to={"/ItemListContainer"}>Cadenitas</Link>
+    <Link to={"/ItemListContainer/cadenita"}>Cadenitas</Link>
     </li>
     <li>
-    <Link to={"/ItemListContainer"}>Aros</Link>
+    <Link to={"/ItemListContainer/aro"}>Aros</Link>
     </li>
     <li>
-    <Link to={"/ItemListContainer"}>Pulseras</Link>
+    <Link to={"/ItemListContainer/pulsera"}>Pulseras</Link>
     </li>
     </ul>
     </li>
