@@ -27,8 +27,14 @@ useEffect(() => {
 getData()
 }, [Id])
 return (
+<div >
+{ Id > 35
+      ?
+    (<div>Lo siento el accesorio que busca no existe</div>):
 <div className="descripcion"> <ItemDetail data={data} /></div>
-)
 }
+</div>
+)}
+
 
 export default ItemDetailContainer;
