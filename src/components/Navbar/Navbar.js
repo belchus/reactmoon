@@ -24,7 +24,7 @@ const Navbar = () => {
     </ul>
     </li>
     <li>
-    <a href="#">Contacto</a>
+    <Link to={"/Contact"}>Contacto</Link>
     </li>
     <li className="Cart">
     <Link to={"/Cart"}><CartWidget/></Link>

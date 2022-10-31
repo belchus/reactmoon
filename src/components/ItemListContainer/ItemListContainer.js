@@ -19,7 +19,7 @@ if (DetalleId){
 const queryFilter=query(queryCollection,where("categoria","==",DetalleId))
 getDocs(queryFilter)
 .then(res=>setProductos(res.docs.map(items=>({id: items.id, ...items.data()}))))
-}else{
+}else {
     getDocs(queryCollection)
 .then(res=>setProductos(res.docs.map(items=>({id: items.id, ...items.data()}))))}
         },[DetalleId])

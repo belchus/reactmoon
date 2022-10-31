@@ -26,7 +26,8 @@ setData({ ...doc.data(), data })
 useEffect(() => {
 getData()
 }, [Id])
-return (<div className="descripcion"> <ItemDetail data={data} /></div>
+return (
+<div className="descripcion"> <ItemDetail data={data} /></div>
 )
 }
 
