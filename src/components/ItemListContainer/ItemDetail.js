@@ -16,6 +16,7 @@ const onAdd = (cantidad) => {
             <h2 > {data.nombre}</h2>
             <p> {data.descripcion}</p>
             <img className="ItemDetalle" src={data.imagen} alt={data.nombre}/>
+            <p> ${data.precio}</p>
             <Contador initial={1} stock={10} onAdd={onAdd}/>
         </div>
             

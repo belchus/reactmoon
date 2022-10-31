@@ -107,7 +107,8 @@ return (
     <div>
     {id ? (
         <div>
-    Muchas gracias por su compra, su id de compra es: {id}
+    Muchas gracias por su compra, su numero de compra es: 
+       {id}
         
         </div>
     ) : (

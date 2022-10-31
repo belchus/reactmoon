@@ -17,7 +17,7 @@ const Cart = ( {}) =>{
         return(
             <>
             <p>El carrito esta vacio</p>
-            <Link to="/">Ir a La tienda</Link>
+            <Link to="/"><button>Ir a La tienda</button></Link>
             </>
         );
     }
